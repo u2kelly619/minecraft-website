@@ -1,0 +1,179 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:link, a:hover{
+    text-decoration: none;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+overflow: hidden;
+}
+
+nav a{
+display: inline-block;  
+width: 200px;
+height: 70px;
+padding: 15px 0 15px 0;
+color: black;
+}
+
+nav a:hover{
+color: black;
+border-bottom: 3px solid yellow;
+}
+
+.burgar{
+color: white;
+font-size: 1.5rem;
+display:none;
+}
+
+.sticky{
+position: fixed;
+top:0;
+background:rgba(0, 0, 0,0.7);
+transition:1s;
+z-index: 1;
+}
+
+.sticky a{
+color:white;
+}
+
+.sticky a:hover{
+    color:white;
+}
+
+
+@media screen and (max-width: 786px){
+
+.burgar{
+    display: block;
+    float: right;
+}
+
+.showing{
+    max-height:15em;
+    margin-top: 50px;
+}
+
+#navbar{
+    background: rgba(0, 0, 0,0.7);
+    position: fixed;
+}
+
+nav a{
+    color: white;
+}
+
+nav a:hover{
+    color: white;
+    border-bottom: 3px solid yellow;
+    }
+
+nav ul{
+    color:white;
+    flex-direction: column;
+    align-self:flex-end;
+    max-height: 0px;
+    transition: 1s;
+    padding-left: 50px;
+    }
+    
+nav ul li {
+    box-sizing: border-box;
+    width:100%;
+    text-align: center;
+}
+    
+}
+
+/* main */
+.main-backgroud{
+    height: 100vh;
+    background: no-repeat center url('https://i.imgur.com/OENL14q.png');
+    background-size: cover;
+}
+
+.main{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: -70vh;
+    padding: 0 !important;
+    
+}
+
+@media screen and (max-width: 1400px){
+    .main{
+        box-shadow:0 0px rgba(0,0,0,0);       
+    }
+}
+
+.banner{
+    height: 200px;
+    overflow: hidden;
+}
+.banner-pic{
+    background: url('https://i.imgur.com/pVTZChp.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width: 786px){
+    .banner{
+        display: none;
+    }
+    .banner-pic{
+        display: none;
+    }
+}
+
+.main-logo-title{
+    position: relative;
+    top:-50px;
+}
+
+.logo-pic{
+    width: 100px;
+}
+
+.card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.bi-star-fill{
+    color: rgb(255, 208, 0);
+}
+
+/* footer */
+footer{
+    font-size: 0.9rem;
+}
+
+.footer{
+background: linear-gradient(
+    rgba(63, 59, 59, 0.5) 0%,
+    rgba(0, 0, 0, 0.9)  65%
+) ,url('https://i.imgur.com/0aZVfTF.png') repeat center / auto 100%;
+color:white;
+padding:20px 5px 20px 5px;
+}
+
+
+  
